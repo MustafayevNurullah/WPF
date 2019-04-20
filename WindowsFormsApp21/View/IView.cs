@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp21.View
 {
-    public interface Views
+    public interface IView
     {
         
         void ShowView();

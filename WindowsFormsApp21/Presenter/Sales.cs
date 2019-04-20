@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using WindowsFormsApp21.View;
 
 namespace WindowsFormsApp21.Presenter
 {
     class Sales
     {
+        IView views;
 
-        void SalesPresenter()
+
+        void SalesPresenter(IView view)
         {
-            
+            this.views = view;
         }
         void ShowView()
         {
-
+            views.ShowView();
         }
     }
 }
